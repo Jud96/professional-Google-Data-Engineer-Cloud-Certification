@@ -42,12 +42,15 @@ dataprep allows you to visually explore, clean, and prepare data for analysis an
 5- **serve** : can be any service like (web app, BI tools, ML models,spreadsheet etc..)
 
 <hr>
+
 6- **orchestration** : can be any orchestration tool like (cloud composer, cloud scheduler, cloud functions etc..)
 
 <hr>
+
 7- **monitoring** : can be any monitoring tool like (cloud monitoring, cloud logging etc..)
 
 <hr>
+
 8- **security** : can be any security tool like (IAM, secret manager etc..)
 
 |service|role|description|
@@ -83,23 +86,25 @@ dataprep allows you to visually explore, clean, and prepare data for analysis an
 projects 
 | project name | path | technologies | description |
 | ------------ | ---- | ------------ | ----------- |
-|  1_Creating a Streaming Data Pipeline for a Real-Time Dashboard with Dataflow            |streamingdata/streamingDatapipelines      | bigquery,pubsub,dataflow template ,data studio             |   streaming data pipeline to   capture taxi revenue, passenger count, ride status, (pub/sub to bigquery using dataflow template) then explore data and visualize the results          |
-|2_Predicting Visitor Purchases with a Classification Model with BigQuery ML| BigQuery/predictingVistorPurchases| bigquery , bigquery ML | explore data analysis , create classification model and train/evaluate it then  improve performance using feature enginnering and prediction|
+|  1_Creating a Streaming Data Pipeline for a Real-Time Dashboard with Dataflow            |streamingdata/ streamingDatapipelines      | bigquery,pubsub,dataflow template ,data studio             |   streaming data pipeline to   capture taxi revenue, passenger count, ride status, (pub/sub to bigquery using dataflow template) then explore data and visualize the results          |
+|2_Predicting Visitor Purchases with a Classification Model with BigQuery ML| BigQuery/ predictingVistorPurchases| bigquery , bigquery ML | explore data analysis , create classification model and train/evaluate it then  improve performance using feature enginnering and prediction|
 |3_Vertex AI Predicting Loan Risk with AutoML| Vertex_AI_Predicting Loan Risk ..| Vertex AI ,AutoML | upload data, train  with AutoML,evaluate and deploy model to endpoint|
 |4_Using BigQuery to do Analysis| BigQuery/Analytics| BigQuery | load data from public datasets and explore data analysis|
-|5_Loading Taxi Data into Google Cloud SQL| Cloud_SQL/loaddatatocloudsql| Cloud SQL | create sql instance, whitelist IP ,create schema , add data (csv) to database|
-|6_Loading Data,Array and structures in BigQuery| BigQuery/workingWithJsonAndArrayData | BigQuery | deal with arrays,json,structs|
+|5_Loading Taxi Data into Google Cloud SQL| Cloud_SQL/ loaddatatocloudsql| Cloud SQL | create sql instance, whitelist IP ,create schema , add data (csv) to database|
+|6_Loading Data,Array and structures in BigQuery| BigQuery/ workingWithJsonAndArrayData | BigQuery | deal with arrays,json,structs|
 |7_Running Apache Spark jobs on Dataproc| Dataproc/sparktobg | Dataproc ,cloud storage ,bigquery | create dataproc cluster, run spark job, run spark job with jupyter notebook ,data from HDFS ,GCS,automate process,cloud function to process data and save result when upload data to GCS|
 |8_Simple Dataflow , map reduce in dataflow| Dataflow/.. | Dataflow | create dataflow pipeline run locally/oncloud , map reduce in dataflow ,practicing pipeline side Inputs|
 |9_Building and executing a pipeline in google cloud fusion| Datafusion/.. | Datafusion | wrangler ,create datafusion pipeline , run pipeline |
 |10_Cloud Composer| cloudComposer/.. | Composer | create composer environment , create dag (create datapro cluster,run spark job,delete cluster) , create variables , monitor job|
-|11_Streaming Data Processing Publish Streaming Data into PubSub| StreamingDataProcessing/publish streaming data into pub sub | PubSub | create pub/sub topic , create subscription ,simulate sensors real time |
-|12_Streaming Data Pipelines| StreamingDataProcessing/streamingDataPipelines_2| PubSub ,dataflow| create pub/sub topic , impact increasing throughput , explore metrics , create Alerts|
-|13_Streaming Data Processing Streaming Analytics and Dashboards| StreamingDataProcessing/streamingAnalytics|data studio| create data studio dashboard|
-|14_Streaming Data Processing Streaming Data Pipelines into Bigtable| StreamingDataProcessing/Bigtable| bigtable ,dataflow ,pubsub| create bigtable instance , from pub/sub to bigtable , query |
+|11_Streaming Data Processing Publish Streaming Data into PubSub| StreamingDataProcessing/ publish streaming data into pub sub | PubSub | create pub/sub topic , create subscription ,simulate sensors real time |
+|12_Streaming Data Pipelines| StreamingDataProcessing/ streamingDataPipelines_2| PubSub ,dataflow| create pub/sub topic , impact increasing throughput , explore metrics , create Alerts|
+|13_Streaming Data Processing Streaming Analytics and Dashboards| StreamingDataProcessing/ streamingAnalytics|data studio| create data studio dashboard|
+|14_Streaming Data Processing Streaming Data Pipelines into Bigtable| StreamingDataProcessing/ Bigtable| bigtable ,dataflow ,pubsub| create bigtable instance , from pub/sub to bigtable , query |
 |15_cloud_function_to_ingest-data|FunctionClouddemo| cloud function ,datalake ,cloud scheduler,database| create cloud function that run daily to ingest data from GCS to postgres database , accessing to your sensitive data using secret manager|
-|16_Optimizing your BigQuery| BigQuery/optimizingBigQuery| BigQuery | optimize queries in bigquery (like partitioning, minimize I/o, denormalization, reduce expensive computations , using cache,data skew overwhelming a worker , approximate aggregation functions)|
-|18_BigQuery in jupiter on vertex AI| BigQuery/run_bq_on_vertex_AI| BigQuery ,vertex_AI | create jupyter notebook on vertex AI , run queries on bigquery , run python code on bigquery|
-|20_Predict Bike Trip Duration with a Regression Model in BQML| BigQuery/regression_in_bqml| BigQuery ,BQML | create regression model , train/evaluate , predict ,feature engineering ,transform|
-|21_Movie Recommendations in BigQuery ML| BigQuery/Recommendation system | BigQuery ,recommendation sysem  | create recommendation model ,evaluate ,predict movies for user , targeting movie for users , perform batch prediction |
+|16_Optimizing your BigQuery| BigQuery/ optimizingBigQuery| BigQuery | optimize queries in bigquery (like partitioning, minimize I/o, denormalization, reduce expensive computations , using cache,data skew overwhelming a worker , approximate aggregation functions)|
+|17_Text classification with Cloud Natural Language API |AI/TextClassification| Cloud Natural Language API | AI,AIM ,bigquery  | classify text ,classify large dataset python code access to GCS make processing(classification) store result in bigquery|
+|18_BigQuery in jupiter on vertex AI| BigQuery/ run_bq_on_vertex_AI| BigQuery ,vertex_AI | create jupyter notebook on vertex AI , run queries on bigquery , run python code on bigquery|
+|19_ML pipeline on kubeflow | AI/MLPipelineonKubeflow| Kubeflow ,AI | create kubeflow xgboost pipeline , train/evaluate , deploy , predict |
+|20_Predict Bike Trip Duration with a Regression Model in BQML| BigQuery/ regression_in_bqml| BigQuery ,BQML | create regression model , train/evaluate , predict ,feature engineering ,transform|
+|21_Movie Recommendations in BigQuery ML| BigQuery/ Recommendation system | BigQuery ,recommendation sysem  | create recommendation model ,evaluate ,predict movies for user , targeting movie for users , perform batch prediction |
 |22_sending email with container registry | containerRegistry/ | container registry ,set gmail password app  | create container that send email every minute, create container image , push image to container registry ,deploy it |
